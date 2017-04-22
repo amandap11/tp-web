@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>CADASTRO DE DOADOR</legend>
+			<label>Nome Completo:<input type="text" name="nomedoador" required="required"></label><br>
+			<label>Endereço:<input type="text" name="enderecodoador" required="required"></label><br>
+			<label>Telefone:<input type="text" name="telefonedoador" pattern="[0-9]+$" required="required"></label><br>
+			<label>CPF:<input type="text" name="cpfdoador" pattern="[0-9]+$"></label><br>
+			<label>Sexo:<input type="radio" name="sexodoador" value="masculino"> Masculino<input type="radio" name="sexodoador" value="feminino"> Feminino</label><br>
+			<label>Data de Nascimento:<input type="date" name="datadenascimentodoador" required="required"></label><br>
+			<label>Email:<input type="e-mail" name="emaildoador" required="required"></label><br>
+			<label>Login:<input type="text" name="logindoador" required="required"></label><br>
+			<label>Senha:<input type="password" name="senhadoador" required="required"></label><br>
+			<label>Confirmar Senha:<input type="password" name="confirmasenhadoador" required="required"></label><br>
+			<input type="submit" value="Concluir Cadastro">
+			<input type="reset" value="Limpar Tudo">
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>CADASTRO DE POSTO DE COLETA</legend>
+			<label>Nome:<input type="text" name="nomeposto" required="required"></label><br>
+			<label>Endereço:<input type="text" name="enderecoposto" required="required"></label><br>
+			<label>Telefone:<input type="text" name="telefoneposto" pattern="[0-9]+$" required="required"></label><br>
+			<label>Email:<input type="e-mail" name="emailposto" required="required"></label><br>
+			<label>Login:<input type="text" name="loginposto" required="required"></label><br>
+			<label>Senha:<input type="password" name="senhaposto" required="required"></label><br>
+			<label>Confirmar Senha:<input type="password" name="confirmasenhaposto" required="required"></label><br>
+			<input type="submit" value="Concluir Cadastro">
+			<input type="reset" value="Limpar Tudo">
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>CADASTRO DE PEÇA</legend>
+			<label>Tipo:<input type="text" name="tipopeca"  required="required"></label><br>
+			<label>Cor:<input type="color" name="corpeca"  required="required"></label><br>
+			<label>Tamanho:<input type="text" name="tamanhopeca" required="required"></label><br>
+			<label>Publico:<select name="publicopeca">
+            <option>Criança</option>
+            <option>Adolescente</option>
+            <option>Adulto</option>
+        	</select></label><br>
+			<label>Sexo:<input type="radio" name="sexopeca" value="masculino"> Masculino<input type="radio" name="sexopeca" value="feminino"> Feminino<input type="radio" name="sexopeca" value="unissex"> Unissex</label><br>
+			<input type="submit" value="Concluir Cadastro">
+			<input type="reset" value="Limpar Tudo">
+		</fieldset>
+	</form>
+</body>
+</html>
