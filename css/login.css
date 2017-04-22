@@ -3,7 +3,7 @@ body{
     margin-top: 0;
     margin-bottom: 0;
     width: 800px;
-    height: 800px;
+    height: 750px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -29,9 +29,14 @@ h2 {
 }
 
 #login{
-    position: absolute; left: 150px; top: 300px; bottom: 100px;
+    position: absolute; 
+    left: 150px; 
+    top: 300px; 
+    bottom: 100px;
     width: 500px;
     border: 1px solid purple;
     box-sizing: border-box;
-    padding-left: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
