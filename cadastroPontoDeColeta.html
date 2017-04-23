@@ -10,7 +10,7 @@
 
   <link rel="shortcut icon" href="imagens/logo_transparente.ico" type="image/x-icon">
 
-	<link rel="stylesheet" href="css/cadastroDoador.css">
+	<link rel="stylesheet" href="css/cadastroPontoDeColeta.css">
   <link rel="stylesheet" href="css/geral.css">
 
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
@@ -36,62 +36,42 @@
           <img id="logo" src="imagens/logo_transparente.png" id="logotipo"/>
         </span>
         <span>
-          <div id="signupDoador">
-            <h2>Quero doar!</h2>
+          <div id="signupPonto">
+            <h2>Ponto de Coleta</h2>
             <form action="index.html">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <span>Eu sou um(a):</span>
-                <span>
-                  <input type="radio" id="feminino" name="sexoDoador"/>
-                  <label for="radio1">Mulher</label>
-                  <input type="radio" id="masculino" name="sexoDoador"/>
-                  <label for="radio2">Homem</label>
-                </span>   
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Nome Completo</legend>
-                <input class="mdl-textfield__input" type="text" id="nomeDoador" required>   
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Data de Nascimento</legend>
-                <input class="mdl-textfield__input" type="date" id="dataNascimentoDoador" required> 
+                <legend>Nome do Ponto de Coleta</legend>
+                <input class="mdl-textfield__input" type="text" id="nomePonto" required>   
               </div>
               
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Endereço</legend>
-                <input class="mdl-textfield__input" type="text" id="enderecoDoador" required>
+                <input class="mdl-textfield__input" type="text" id="enderecoPonto" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Telefone</legend>
-                <input class="mdl-textfield__input" type="text" id="telefoneDoador" pattern="[0-9]+$" required>
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>CPF</legend>
-                <input class="mdl-textfield__input" type="text" id="cpfDoador" pattern="[0-9]+$" required>
+                <input class="mdl-textfield__input" type="text" id="telefonePonto" pattern="[0-9]+$" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>e-mail</legend>
-                <input class="mdl-textfield__input" type="e-mail" id="emailDoador" required>
+                <input class="mdl-textfield__input" type="e-mail" id="emailPonto" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Nome de Usuário</legend>
-                <input class="mdl-textfield__input" type="text" id="loginDoador" required>
+                <input class="mdl-textfield__input" type="text" id="loginPonto" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Senha</legend>
-                <input class="mdl-textfield__input" type="password" id="passwordDoador" required>
+                <input class="mdl-textfield__input" type="password" id="passwordPonto" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Confirmar senha</legend>
-                <input class="mdl-textfield__input" type="password" id="confirmaPasswordDoador" required>
+                <input class="mdl-textfield__input" type="password" id="confirmaPasswordPonto" required>
               </div>
 
               <div>
@@ -99,7 +79,6 @@
 
                 <button id="registrar" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Registrar</button>
               </div>
-
             </form>
           </div>
         </span>
@@ -107,6 +86,6 @@
       </div>
     </main>
   </div>
-  <script type="text/javascript" src="js/cadastroDoador.js"></script>
+  <script type="text/javascript" src="js/cadastroPontoDeColeta.js"></script>
 </body>
 </html>
