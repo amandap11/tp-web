@@ -1,0 +1,59 @@
+.demo-list-control {
+  width: 300px;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+
+h2{
+    font-size: 40px;
+}
+
+#locaisDoações{
+    position: relative; 
+    left: 150px; 
+    bottom: 150px;
+    width: 700px;
+    height: 100%;
+    border: 1px solid purple;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+body{
+    font-family:Verdana;
+}
+ 
+#tabela{
+    width:100%;
+    border:solid 1px;
+    text-align:left;
+    border-collapse:collapse;
+}
+ 
+#tabela tbody tr{
+    border:solid 1px;
+    height:30px;
+    cursor:pointer;
+}
+ 
+#tabela thead{
+    background:beige;
+}
+ 
+#tabela thead th:nth-child(1){
+    width:100px;
+}
+ 
+#tabela input{
+    color:navy;
+    width:100%;
+}
+
+
+
+
