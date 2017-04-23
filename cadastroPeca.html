@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Peça</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>CADASTRO DE PEÇA</legend>
+			<label>Tipo:<input type="text" name="tipopeca"  required="required"></label><br>
+			<label>Cor:<input type="color" name="corpeca"  required="required"></label><br>
+			<label>Tamanho:<input type="text" name="tamanhopeca" required="required"></label><br>
+			<label>Publico:<select name="publicopeca">
+            <option>Criança</option>
+            <option>Adolescente</option>
+            <option>Adulto</option>
+        	</select></label><br>
+			<label>Sexo:<input type="radio" name="sexopeca" value="masculino"> Masculino<input type="radio" name="sexopeca" value="feminino"> Feminino<input type="radio" name="sexopeca" value="unissex"> Unissex</label><br>
+			<label>Imagem:<input type="file" name="imagempeca"></label><br>
+			<input type="submit" value="Concluir Cadastro">
+			<input type="reset" value="Limpar Tudo">
+		</fieldset>
+	</form>
+</body>
+</html>
