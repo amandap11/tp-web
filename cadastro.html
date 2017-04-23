@@ -52,5 +52,34 @@
 			<input type="reset" value="Limpar Tudo">
 		</fieldset>
 	</form>
+
+	<form>
+		<fieldset>
+			<legend>FALE CONOSCO<br><br>
+             Tem alguma dúvida, sugestão, elogio ou reclamação?
+             <br>
+             Entre em contato conosco através dessa sessão!
+             <br>
+			</legend>
+
+            <label>Nome:<input type="text" name="nomeFaleConosco" required="required"></label><br>
+			<label>Endereço:<input type="text" name="enderecoFaleConosco" required="required"></label><br>
+			<label>Telefone:<input type="text" name="telefoneFaleConosco" pattern="[0-9]+$" required="required"></label><br>
+			<label>Email:<input type="e-mail" name="emailFaleConosco" required="required"></label><br>
+			<label for="tipoAssunto">Assunto:</label>
+                     <select name="tipoAssunto" id="tipoAssunto" required="required">
+                        <option value="duv">Dúvidas</option>
+                        <option value="sug" selected>Sugestões</option>
+                        <option value="elo" selected>Elogios</option>
+                        <option value="rec" selected>Reclamações</option>
+                     </select><br><br>
+            <label for="msg">Mensagem:</label>
+            <textarea id="msg" required="required"></textarea>
+
+
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar Tudo">
+		</fieldset>
+	</form>
 </body>
 </html>
