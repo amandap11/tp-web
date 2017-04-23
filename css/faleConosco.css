@@ -9,10 +9,8 @@
 #faleconosco{
     position: relative; 
     left: 150px; 
-    bottom: 150px;
     width: 500px;
     height: 100%;
-    border: 1px solid purple;
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -21,12 +19,14 @@
 }
 
 #msg{
-    width: 200px;
-
+    width: 300px;
+    height: 180px;
 }
+
 h2 {
     font-size: 40px;
 }
+
 h3{
     font-size: 20px;
 }
