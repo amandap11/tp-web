@@ -2,8 +2,7 @@ h2 {
     margin-left: 20px;
     margin-right: 20px;
     font: times;
-    font-size: 30px;
-    
+    font-size: 30px;   
 }
 
 #login{
@@ -14,6 +13,6 @@ h2 {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+    top:  100px;
     text-align: center;
-    vertical-align: middle;
 }
