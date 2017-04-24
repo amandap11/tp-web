@@ -1,6 +1,6 @@
 let botaoEnviar = document.getElementById("enviar");
 
-botaoCadastrar.addEventListener('click', function(){
+botaoEnviar.addEventListener('click', function(){
 
 	window.location.href = "index.html";
 	

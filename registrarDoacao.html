@@ -32,11 +32,9 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Agasalhe +</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="index.html">Início</a>
-        <a class="mdl-navigation__link" href="login.html">Sou Doador</a>
-        <a class="mdl-navigation__link" href="cadastroDoador.html">Cadastre-se!</a>
-        <a class="mdl-navigation__link" href="loginPontoDeColeta.html">Ponto de Coleta</a>
-        <a class="mdl-navigation__link" href="cadastroPontoDeColeta.html">Quero ser Ponto de Coleta</a>
+        <a class="mdl-navigation__link" href="minhaConta.html">Minha Conta</a>
+        <a class="mdl-navigation__link" href="editarConta.html">Editar Conta</a>
+        <a class="mdl-navigation__link" href="index.html">Sair</a>
       </nav>
     </div>
     <main class="mdl-layout__content">
@@ -45,66 +43,47 @@
           <img id="logo" src="imagens/logo_transparente.png" id="logotipo"/>
         </span>
         <span>
-          <div class="conteudoCentralizado" id="signupDoador">
+          <div class="conteudoCentralizado" id="registrarPeca">
             <h2>Registrar Doação</h2>
-            <form action="index.html">
-              
-				
-
+            <!--<form action="minhaConta.html">-->
+            <form action="editarConta.html">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Nome Completo</legend>
-                <input class="mdl-textfield__input" type="text" id="nomeDoador" required>   
+                <label for="tipoItem">Item:</label>
+                      <br>
+                     <select size="5" name="tipoItem" id="tipoItem" required="required">
+                        <option value="blusa">Blusa</option>
+                        <option value="camiseta">Camiseta</option>
+                        <option value="calca">Calça</option>
+                        <option value="bermuda">Bermuda</option>
+                        <option value="short">Short</option>
+                        <option value="jaqueta">Jaqueta</option>
+                        <option value="blusaFrio">Blusa de Frio</option>
+                        <option value="touca">Touca</option>
+                        <option value="bone">Boné</option>
+                        <option value="luva">Par de Luvas</option>
+                        <option value="meia">Par de Meias</option>
+                        <option value="tenis">Par de Tênis</option>
+                        <option value="sapato">Par de Sapatos</option>
+                        <option value="sapatilha">Par de Sapatilhas</option>
+                     </select><br>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Data de Nascimento</legend>
-                <input class="mdl-textfield__input" type="date" id="dataNascimentoDoador" required> 
+                <label for="pontoColeta">Entrega:</label>
+                    <br>
+                     <select size="5" name="pontoColeta" id="pontoColeta" required="required">
+                        <option value="id1">Av.Henfil, 1500, Serrano, Belo Horizonte, Brasil</option>
+                        <option value="id2">Rua Albert Eintein, 500, Cidade Nobre, Ipatinga, Brasil</option>
+                        <option value="id3">Rua Maradona, 100, Buena Vista, Buenos Aires, Argentina</option>
+                        <option value="id4">Brooklin, 250, Rua 4, New York, USA</option>
+                        <option value="id5">Rua Guaranis, 1800, Centro, Belo Horizonte, Brasil</option>
+                     </select><br><br>
               </div>
-              
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Endereço</legend>
-                <input class="mdl-textfield__input" type="text" id="enderecoDoador" required>
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Telefone</legend>
-                <input class="mdl-textfield__input" type="text" id="telefoneDoador" pattern="[0-9]+$" required>
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>CPF</legend>
-                <input class="mdl-textfield__input" type="text" id="cpfDoador" pattern="[0-9]+$" maxlength="8" required>
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>e-mail</legend>
-                <input class="mdl-textfield__input" type="e-mail" id="emailDoador" required>
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Nome de Usuário</legend>
-                <input class="mdl-textfield__input" type="text" id="loginDoador" required>
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Senha</legend>
-                <input class="mdl-textfield__input" type="password" id="passwordDoador" required>
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Confirmar senha</legend>
-                <input class="mdl-textfield__input" type="password" id="confirmaPasswordDoador" required>
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Foto</legend>
-                <input class="mdl-textfield__input" type="file" id="fotoDoador" pattern="[0-9]+$">
-              </div>
-
+    
               <div>
                 <button id="limpar" type="reset" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Limpar</button>
 
-                <button id="registrar" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Registrar</button>
+                <button id="doar" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Doar!</button>
               </div>
 
             </form>
