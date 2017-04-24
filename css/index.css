@@ -12,3 +12,32 @@ h1 {
 	font-family: 'Kaushan Script';
 	color: purple;
 }
+
+p {
+	font: arial 14px;
+}
+
+h2{
+	font: times;
+	font-size: 24px;
+	color: purple;
+	font-weight: normal;
+}
+#quemSomos{
+    position: absolute;  left: 350px; top: 125px;
+    box-sizing: border-box;
+    width: 600px;
+
+}
+
+#foto1{
+	float: right;
+	width: 680px;
+    height: 150px;
+
+}
+.logotipos{
+
+    height: 100px;
+    width: 100px;
+}

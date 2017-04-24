@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Agasalhe +</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-purple.min.css">
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+	<link rel="shortcut icon" href="imagens/logo_transparente.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="css/paginaPontoColeta.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/transicaoCadastroConta.js"></script>
+</head>
+<body onload="load()">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a id="listaLocais" class="mdl-navigation__link" href="index.html">Início</a>
+            <a id="listaLocais" class="mdl-navigation__link" href="locais.html">Onde doar?</a>
+            <a id="menuContato" class="mdl-navigation__link" href="faleConosco.html">Contato</a>
+        </nav>
+      </div>
+    </header> 
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Agasalhe +</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">Sair</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <span>
+          <img id="logo" src="imagens/logo_transparente.png" id="logotipo"/>
+        </span>
+        <span>
+          <div class="conteudoCentralizado" id="exibicaoMinhaContaPontoColeta">
+            <h2>Ponto de Coleta</h2>
+
+            <h3>Bem-vindo ponto de coleta 01!<br> 
+            Segue abaixo a lista de notificações de usuários doadores para classificação das peças. Verifique se existem pendências.</h3>
+            <form action="paginaPontoColeta.html">
+
+              <table id="playlistTable">
+				  <caption>Notificações</caption>
+				  <thead>
+				    <tr>
+				      <th>Marcar</th>
+				      <th>Nome</th>
+				      <th>Peça recebida</th>
+				      <th>Situaçao</th>
+				      <th>Classificação</th>
+				    </tr>
+				  </thead>
+
+				  <tbody>
+				    <tr>
+				      <td><input type="checkbox" name="marcar"/></td>
+				      <td>Vinícius</td>
+				      <td>Camisa</td>
+				      <td><span id="pendente">Pendente</span></td>
+				      <td>
+				      	<label for="classificar"></label>
+                           <select name="classificarPeça" id="classificarPeça">
+                             <option value="nova">Nova</option>
+                             <option value="ótima" selected>Ótima</option>
+                             <option value="boa" selected>Boa</option>
+                             <option value="ruim" selected>Ruim</option>
+                             <option value="inutilizavel" selected>Inutilizável</option>
+                           </select><br><br>
+				      </td>
+				    </tr>
+
+				    <tr>
+				      <td><input type="checkbox" name="marcar"/></td>
+				      <td>Amanda</td>
+				      <td>Calça</td>
+				      <td><span id="concluido">Concluído</span></td>
+				      <td>
+				      	<label for="classificar"></label>
+                           <select name="classificarPeça" id="classificarPeça">
+                             <option value="nova">Nova</option>
+                             <option value="ótima" selected>Ótima</option>
+                             <option value="boa" selected>Boa</option>
+                             <option value="ruim" selected>Ruim</option>
+                             <option value="inutilizavel" selected>Inutilizável</option>
+                           </select><br><br>
+				      </td>
+				    </tr>
+
+				    <tr>
+				      <td><input type="checkbox" name="marcar"/></td>
+				      <td>Coletinha</td>
+				      <td>Camisa</td>
+				      <td><span id="pendente">Pendente</span></td>
+				      <td>
+				      	<label for="classificar"></label>
+                           <select name="classificarPeça" id="classificarPeça">
+                             <option value="nova" selected>Nova</option>
+                             <option value="ótima" selected>Ótima</option>
+                             <option value="boa" selected>Boa</option>
+                             <option value="ruim" selected>Ruim</option>
+                             <option value="inutilizavel" selected>Inutilizável</option>
+                           </select><br><br>	
+				      </td>
+				    </tr>
+				  </tbody>
+				</table>
+
+              <div>
+                <button id="confirmar" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Confirmar</button>
+              </div>
+
+            </form>
+          </div>
+        </span>
+		  </div>
+    </main>
+  </div>
+  <script type="text/javascript" src="js/paginaPontoColeta.js"></script>
+
+</body>
+</html>
