@@ -1,10 +1,3 @@
-h2 {
-    margin-left: 20px;
-    margin-right: 20px;
-    font: times;
-    font-size: 30px;   
-}
-
 #login{
     position: relative; 
     left: 150px; 
@@ -13,6 +6,5 @@ h2 {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    top:  100px;
     text-align: center;
 }
