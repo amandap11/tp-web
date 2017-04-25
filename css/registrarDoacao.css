@@ -16,3 +16,7 @@
     margin-right: auto;
     text-align: center;
 }
+#txtBusca {
+    float: left;
+    width: 300px;
+}
