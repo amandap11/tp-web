@@ -32,7 +32,7 @@
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Agasalhe +</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="minhaContaDoador.html">Minha Conta</a>
+        <a class="mdl-navigation__link" href="minhaConta.html">Minha Conta</a>
         <a class="mdl-navigation__link" href="editarConta.html">Editar Conta</a>
         <a class="mdl-navigation__link" href="index.html">Sair</a>
       </nav>
@@ -46,12 +46,12 @@
           <div class="conteudoCentralizado" id="registrarPeca">
             <h2>Registrar Doação</h2>
             <!--<form action="minhaConta.html">-->
-            <form action="minhaContaDoador.html">
+            <form action="editarConta.html">
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <label for="tipoItem">Item:</label>
                       <br>
                      <select size="5" name="tipoItem" id="tipoItem" required="required">
-                        <option value="blusa">Blusa</option>
+                        <option value="camisa">Camisa</option>
                         <option value="camiseta">Camiseta</option>
                         <option value="calca">Calça</option>
                         <option value="bermuda">Bermuda</option>
@@ -65,41 +65,16 @@
                         <option value="tenis">Par de Tênis</option>
                         <option value="sapato">Par de Sapatos</option>
                         <option value="sapatilha">Par de Sapatilhas</option>
+                        <option value="chinelo">Par de Chinelos</option>
+                        <option value="cuecaCalcinha">Cueca/Calcinha</option>
                      </select><br>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Cor</legend>
-                <input class="mdl-textfield__input" type="color" id="corpeca" required="required"> 
-              </div>
-              
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Tamanho</legend>
-                <input class="mdl-textfield__input" type="text" id="tamanhopeca" required="required">
-              </div>
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Sexo</legend>
-                <input class="mdl-textfield__input" type="radio" name="sexopeca" value="masculino"> Masculino<input type="radio" name="sexopeca" value="feminino"> Feminino<input type="radio" name="sexopeca" value="unissex"> Unissex><br>
-              </div>
-
-             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-             <legend>Publico</legend>
-              <select name="publicopeca" id="publicopeca">
-              <option>Criança</option>
-              <option>Adolescente</option>
-              <option>Adulto</option>
-              <option>Idoso</option>
-              </select><br>
-             </div>
-
-             <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <legend>Foto</legend>
-                <input class="mdl-textfield__input" type="file" id="fotoPeca">
-             </div>-->
-
-              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                <label for="pontoColeta">Entrega:</label>
+                
+                <label for="pontoColeta">Entrega:<br>
+                   <input type="text" id="txtBusca" placeholder="Pesquisar Local..."/>
+                </label>
                     <br>
                      <select size="5" name="pontoColeta" id="pontoColeta" required="required">
                         <option value="id1">Av.Henfil, 1500, Serrano, Belo Horizonte, Brasil</option>
