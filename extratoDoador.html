@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/geral.css">
   <link rel="stylesheet" href="css/extratoDoador.css">
 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 <body>
@@ -43,7 +45,9 @@
           </span>
           <span>
           <div class="conteudoCentralizado" id="extratoDoador">
-            <h2>Extrato do Doador</h2>
+            <h2>Extrato do Doador</h2><br>
+            <h4>Total de Pontos Acumulados:<input type="number" name="pontosAcumuladosDoador"></h4>
+            <h4>Doações</h4>
             <form action="index.html">
               <table id="tabelaExtratoDoador">
                 <thead>
@@ -57,10 +61,7 @@
                         <th><input type="number" id="codTabelaExtrato"></th>
                         <th><input type="text" id="nomepeca"></th>
                         <th><input type="number" id="pontosTabelaExtrato"></th>
-                        <th><select name="aprovacaoExtrato" id="aprovacaoExtrato">
-              				<option>Sim</option>
-              				<option>Não</option>
-              			</select></th>
+                        <th><input type="text" id="aprovacaoTabelaExtrato"></th>
                     </tr>            
                 </thead>
                 <tbody>
@@ -105,6 +106,6 @@
       	</div>
       </main>
   </div>
-  <script type="text/javascript" src="js/locaisDisponiveis.js"></script>
+  <script type="text/javascript" src="js/tabelaExtrato.js"></script>
 </body>
 </html>
