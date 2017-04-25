@@ -9,37 +9,145 @@
 
 	<link rel="shortcut icon" href="imagens/logo_transparente.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/geral.css">
+    <link rel="stylesheet" type="text/css" href="css/troca.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 <body>
 	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<header class="mdl-layout__header">
-			  <div class="mdl-layout__header-row">
-			    <div class="mdl-layout-spacer"></div>
-			    <nav class="mdl-navigation mdl-layout--large-screen-only">
-			        <a id="listaLocais" class="mdl-navigation__link" href="index.html">Início</a>
-			        <a id="listaLocais" class="mdl-navigation__link" href="locais.html">Onde doar?</a>
-			        <a id="menuContato" class="mdl-navigation__link" href="faleConosco.html">Contato</a>
-			    </nav>
-			  </div>
-			</header> 
-			<div class="mdl-layout__drawer">
-		      <span class="mdl-layout-title">Agasalhe +</span>
-		      <nav class="mdl-navigation">
-		        <a class="mdl-navigation__link" href="login.html">Sou Doador</a>
-		        <a class="mdl-navigation__link" href="cadastroDoador.html">Cadastre-se!</a>
-		        <a class="mdl-navigation__link" href="loginPontoDeColeta.html">Ponto de Coleta</a>
-		        <a class="mdl-navigation__link" href="cadastroPontoDeColeta.html">Quero ser Ponto de Coleta</a>
-		      </nav>
-		    </div>
-		<main class="mdl-layout__content">
-			<div class="page-content">
-			    <span>
-			      <img id="logo" src="imagens/logo_transparente.png" id="logotipo"/>
-			    </span>
-			</div>
-		</main>
-	</div>
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a id="listaLocais" class="mdl-navigation__link" href="index.html">Início</a>
+            <a id="listaLocais" class="mdl-navigation__link" href="locais.html">Onde doar?</a>
+            <a id="menuContato" class="mdl-navigation__link" href="faleConosco.html">Contato</a>
+        </nav>
+      </div>
+    </header> 
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Agasalhe +</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="index.html">Início</a>
+        <a class="mdl-navigation__link" href="login.html">Sou Doador</a>
+        <a class="mdl-navigation__link" href="cadastroDoador.html">Cadastre-se!</a>
+        <a class="mdl-navigation__link" href="loginPontoDeColeta.html">Ponto de Coleta</a>
+        <a class="mdl-navigation__link" href="cadastroPontoDeColeta.html">Quero ser Ponto de Coleta</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <span>
+          <img id="logo" src="imagens/logo_transparente.png" id="logotipo"/>
+        </span>
+        <span>
+          <div class="conteudoCentralizado" id="trocaDoacao">
+            <h2>Troca</h2><br>
+            <h4>Total de Pontos Acumulados: 351</h4>
+            <h4>Relação de Lojas Participantes</h4>
+            <form action="index.html">
+              <table id="tabelaTroca">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                        <!--<th>Categoria</th>-->
+                    </tr>
+                    <tr>
+                        <th><input type="number" id="codigoLoja"/></th>
+                        <th><input type="text" id="nomeLoja"/></th>
+                        <!--<th><input type="text" id="categoriaLoja"/></th>-->
+                    </tr>            
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>McDonald's</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Riachuelo</td>
+                </tr>            
+                <tr>
+                    <td>3</td>
+                    <td>Subway</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cineart</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Cinemark</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>CeA</td>
+                </tr> 
+                <tr>
+                    <td>7</td>
+                    <td>Burger king</td>
+                </tr> 
+                <tr>
+                    <td>8</td>
+                    <td>Marisa</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Carrefour</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Posto Ipiranga</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>MV Celulares</td>
+                </tr> 
+                <tr>
+                    <td>12</td>
+                    <td>Rafaela Melo</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Casas Bahia</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Ricardo Eletro</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Leitura</td>
+                </tr>                   
+            </tbody>
+        </table>
+            </form><br>
+			<h4>Conversão pontos em desconto:</h4>
+			<span>Cada 10 pontos equivalem a 1% de desconto!</span><br>
+			<h2>Converta seus pontos!</h2>
+			<form action="index.html">
+				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                	<legend>Insira a Loja:</legend>
+                	<input class="mdl-textfield__input" type="text" id="nomeLoja" required>   
+              	</div><br>
+              	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                	<legend>Insira o total de pontos a serem convertidos:</legend>
+                	<input class="mdl-textfield__input" type="text" id="telefoneDoador" pattern="[0-9]+$" required>
+              	</div><br>
+              	<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                	<legend>Seu desconto será de: 25%</legend>
+              	</div><br>
+				<button id="gerarComprovante" type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Gerar Comprovante</button>
+			</form>
+          </div>
+        </span>
+        </span>
+      </div>
+    </main>
+  </div>
+  <script type="text/javascript" src="js/tabelaTroca.js"></script>
 </body>
 </html>
