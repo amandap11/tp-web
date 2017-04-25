@@ -1,10 +1,10 @@
-body{
+/*body{
 
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
 
-}
+}*/
 
 h1 {
     font-size: 50px; 
@@ -23,16 +23,20 @@ h2{
 	color: purple;
 	font-weight: normal;
 }
-#quemSomos{
-    position: absolute;  left: 350px; top: 125px;
-    box-sizing: border-box;
-    width: 600px;
 
+
+#quemSomos{
+    position: absolute;  
+    right: 30px; 
+    top: 125px;
+    box-sizing: border-box;
+    width: 55%;
+	text-align: justify;
 }
 
 #foto1{
 	float: right;
-	width: 680px;
+	width: 60%;
     height: 150px;
 
 }
