@@ -1,0 +1,52 @@
+.demo-list-control {
+  width: 300px;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+
+h2{
+    font-size: 40px;
+}
+
+#extratoDoador{
+    position: relative; 
+    left: 150px; 
+    width: 700px;
+    height: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body{
+    font-family:Verdana;
+}
+ 
+#tabelaExtratoDoador{
+    width:100%;
+    border:solid 1px;
+    text-align:left;
+    border-collapse:collapse;
+}
+ 
+#tabelaExtratoDoador tbody tr{
+    border:solid 1px;
+    height:30px;
+    cursor:pointer;
+}
+ 
+#tabelaExtratoDoador thead{
+    background:beige;
+}
+ 
+#tabelaExtratoDoador thead th:nth-child(1){
+    width:100px;
+}
+ 
+#tabelaExtratoDoador input{
+    color:navy;
+    width:100%;
+}
