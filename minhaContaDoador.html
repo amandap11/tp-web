@@ -31,11 +31,16 @@
     	</header>
     <div class="mdl-layout__drawer">
       <span class="mdl-layout-title">Agasalhe +</span>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="index.html">Início</a>
+      <nav class="mdl-navigation">  
+        <a class="mdl-navigation__link" href="registrarDoacao.html">Doar!</a>
+        <a class="mdl-navigation__link" href="editarConta.html">Editar Conta</a>
+        <a class="mdl-navigation__link" href="usarMoedas.html">Usar Moedas</a>
+        <a class="mdl-navigation__link" href="index.html">Deslogar</a>
+        <!--
         <a class="mdl-navigation__link" href="login.html">Sou Doador</a>
         <a class="mdl-navigation__link" href="cadastroDoador.html">Cadastre-se!</a>
         <a class="mdl-navigation__link" href="loginPontoDeColeta.html">Ponto de Coleta</a>
+        -->
       </nav>
     </div>
       <main class="mdl-layout__content">
@@ -46,7 +51,15 @@
           <span>
           <div class="conteudoCentralizado" id="extratoDoador">
             <h2>Extrato do Doador</h2><br>
-            <h4>Total de Pontos Acumulados:<input type="number" name="pontosAcumuladosDoador"></h4>
+
+            <h4>Bem vindo <span id="nome"> Vinícius Mendes Pinto</span>!</h4>
+
+            <h4>Total de Moedas Acumuladas:
+                <span id="quantidadeMoedas">10</span>
+                <!--<input type="number" name="pontosAcumuladosDoador">-->
+                <img src="imagens/moeda.png" id="moeda">
+
+            </h4>
             <h4>Doações</h4>
             <form action="index.html">
               <table id="tabelaExtratoDoador">
@@ -54,8 +67,8 @@
                     <tr>
                         <th>Código</th>
                         <th>Peça</th>
-                        <th>Pontos</th>
-                        <th>Aprovação</th>
+                        <th>Moedas</th>
+                        <th>Situação</th>
                     </tr>
                     <tr>
                         <th><input type="number" id="codTabelaExtrato"></th>
@@ -68,35 +81,77 @@
                 <tr>
                     <td>1</td>
                     <td>Par de meias</td>
-                    <td>3</td>
-                    <td>Sim</td>
+                    <td>7</td>
+                    <td><span id="aprovado">Aprovado</span></td>
                 </tr>
                 <tr>
                     <td>2</td>
                     <td>Camiseta</td>
-                    <td>5</td>
-                    <td>Sim</td>
+                    <td>15</td>
+                    <td><span id="aprovado">Aprovado</span></td>
                 </tr>            
                 <tr>
                     <td>3</td>
                     <td>Jaqueta</td>
-                    <td>0</td>
-                    <td>Não</td>
+                    <td>-</td>
+                    <td><span id="pendente">Pendente</span></td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>Touca</td>
                     <td>3</td>
-                    <td>Sim</td>
+                    <td><span id="aprovado">Aprovado</span></td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>Jaqueta</td>
-                    <td>3</td>
-                    <td>Sim</td>
+                    <td>30</td>
+                    <td><span id="aprovado">Aprovado</span></td>
                 </tr>            
             </tbody>
         </table>
+
+<br><br>
+
+<h4>Histórico de Moedas Usadas</h4>
+
+<table id="tabelaExtratoDoador">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Local</th>
+                        <th>Moedas Usadas</th>
+                        <th>Situação</th>
+                    </tr>
+                    <tr>
+                        <th><input type="number" id="codTabelaExtrato"></th>
+                        <th><input type="text" id="nomepeca"></th>
+                        <th><input type="number" id="pontosTabelaExtrato"></th>
+                        <th><input type="text" id="aprovacaoTabelaExtrato"></th>
+                    </tr>            
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>McDonalds</td>
+                    <td>25</td>
+                    <td><span id="aprovado">Aprovado</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Burguer King</td>
+                    <td>20</td>
+                    <td><span id="aprovado">Aprovado</span></td>
+                </tr>            
+                <tr>
+                    <td>3</td>
+                    <td>CineArt</td>
+                    <td>10</td>
+                    <td><span id="pendente">Pendente</span></td>
+                </tr>           
+            </tbody>
+        </table>
+        <br><br>
               
             </form>
           </div>

@@ -10,6 +10,41 @@ h2{
     font-size: 40px;
 }
 
+#quantidadeMoedas{
+    font-size: 70px;
+    font-weight: bold;
+    /*border: 5px solid black;
+    /*border-radius: 50px;*/
+    color: gold;
+}
+
+h4{
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+}
+
+h5{
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+#nome{
+    color: blue;
+    font-size: 25px;
+    font-family: 'Arial';
+}
+#moeda{
+    width: 50px;
+    height: 50px;
+}
+#aprovado{
+    color: green;
+    font-weight: bold;
+}
+#pendente{
+    color: red;
+    font-weight: bold;
+}
+
 #extratoDoador{
     position: relative; 
     left: 150px; 
@@ -21,10 +56,11 @@ h2{
     text-align: center;
 }
 
-body{
+/*body{
     font-family:Verdana;
 }
  
+*/
 #tabelaExtratoDoador{
     width:100%;
     border:solid 1px;
