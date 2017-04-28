@@ -36,4 +36,21 @@ h5{
 }
 
 
+#usarMoedas{
+    position: relative; 
+    left: 150px; 
+    width: 500px;
+    height: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+#txtBusca {
+    float: left;
+    width: 300px;
+}
+#nomeEmpresa{
+    width: 305px;
+}
  
