@@ -1,0 +1,26 @@
+{
+  "name": "tp-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-hbs": "^1.0.4",
+    "hbs": "^4.0.1",
+    "material-design-lite": "^1.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandap11/tp-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amandap11/tp-web/issues"
+  },
+  "homepage": "https://github.com/amandap11/tp-web#readme"
+}
