@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+function SucessoComprovante() {
+	alert("Comprovante gerado com sucesso!");
+=======
 function SucessoDoacao() {
 	alert("Doação feita com sucesso!");
+>>>>>>> amanda
 }
 
 function SucessoCadastro() {
@@ -8,6 +13,8 @@ function SucessoCadastro() {
 
 function SucessoContato() {
 	alert("Mensagem recebida! Obrigado!");
+<<<<<<< HEAD
+=======
 }
 
 function SucessoEdicao() {
@@ -16,4 +23,5 @@ function SucessoEdicao() {
 
 function SucessoMoedas() {
 	alert("Belo uso de moedas!");
+>>>>>>> amanda
 }

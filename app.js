@@ -13,7 +13,7 @@ app.set('view engine', 'hbs');
 // nossos arquivos estáticos
 //app.use(express.static(__dirname + '/views'));
 
-let server = app.listen(3000, function () {
+let server = app.listen(process.env.PORT || 3000, function () {
   console.log('Escutando em: http://localhost:3000');
 });
 
