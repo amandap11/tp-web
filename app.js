@@ -18,8 +18,6 @@ var db = {
 };
 
 let server = app.listen(process.env.PORT || 3000, function () {
-	console.log(__dirname + "/data/classificacao-specs.json");
-	console.log(__dirname + "/data/item-specs.json");
   	console.log('process.env.PORT');
 });
 
