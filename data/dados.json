@@ -24,34 +24,71 @@
 	
 	"itens": [
 		{
-			"item": "Bermuda",
+			"nome": "Bermuda",
 			"valor": 20,
 			"novo": 0
 		},
 		{
-			"item": "Blusa de Frio",
+			"nome": "Blusa de Frio",
 			"valor": 30,
-			"novo": 0
 		},
 		{
-			"item": "Camisa",
+			"nome": "Camisa",
 			"valor": 20,
-			"novo": 0
 		},
 		{
-			"item": "Camiseta",
+			"nome": "Camiseta",
 			"valor": 15,
-			"novo": 0
 		},
 		{
-			"item": "Par de Meias",
+			"nome": "Calça",
+			"valor": 40,
+		},
+		{
+			"nome": "Short",
+			"valor": 15,
+		},
+		{
+			"nome": "Jaqueta",
+			"valor": 50,
+		},
+		{
+			"nome": "Touca",
 			"valor": 5,
+		},
+		{
+			"nome": "Boné",
+			"valor": 5,
+		},
+		{
+			"nome": "Par de Luvas",
+			"valor": 5,
+		},
+		{
+			"nome": "Par de Meias",
+			"valor": 7,
 			"novo": 1
 		},
 		{
-			"item": "Calça",
-			"valor": 40,
-			"novo": 0
+			"nome": "Par de Tênis",
+			"valor": 50,
+		},
+		{
+			"nome": "Par de Sapatos",
+			"valor": 30,
+		},
+		{
+			"nome": "Par de Sapatilhas",
+			"valor": 15,
+		},
+		{
+			"nome": "Par de Chinelos",
+			"valor": 10,
+		},
+		{
+			"nome": "Cueca/Calcinha",
+			"valor": 20,
+			"novo": 1
 		}
 	]
 }
