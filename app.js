@@ -9,8 +9,7 @@ var fs = require('fs');
 var _ = require('underscore');
 
 var db = {
-	classificacoes: JSON.parse(fs.readFileSync(__dirname + "/data/classificacoes.json")),
-	itens: JSON.parse(fs.readFileSync(__dirname + "/data/itens.json"))
+	dados: JSON.parse(fs.readFileSync(__dirname + "/data/dados.json"))
 };
 
 // view engine setup
@@ -26,7 +25,7 @@ let server = app.listen(process.env.PORT || 3000, function () {
 });
 
 app.get('/', function(request, response) {
-  response.render('index', db.classificacoes);
+  response.render('index', db.dados);
 });
 
 module.exports = app;

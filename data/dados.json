@@ -1,0 +1,57 @@
+{
+	"classificacoes": [
+		{
+			"estado": "Novo",
+			"valor": 100
+		},
+		{
+			"estado": "Ótimo",
+			"valor": 80
+		},
+		{
+			"estado": "Bom",
+			"valor": 60
+		},
+		{
+			"estado": "Ruim",
+			"valor": 30
+		},
+		{
+			"estado": "Inutilizável",
+			"valor": 10
+		}
+	],
+	
+	"itens": [
+		{
+			"item": "Bermuda",
+			"valor": 20,
+			"novo": 0
+		},
+		{
+			"item": "Blusa de Frio",
+			"valor": 30,
+			"novo": 0
+		},
+		{
+			"item": "Camisa",
+			"valor": 20,
+			"novo": 0
+		},
+		{
+			"item": "Camiseta",
+			"valor": 15,
+			"novo": 0
+		},
+		{
+			"item": "Par de Meias",
+			"valor": 5,
+			"novo": 1
+		},
+		{
+			"item": "Calça",
+			"valor": 40,
+			"novo": 0
+		}
+	]
+}
