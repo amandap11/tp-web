@@ -13,7 +13,7 @@ app.set('view engine', 'hbs');
 //app.use(express.static(__dirname + '/views'));
 
 var db = {
-	classificacoes: JSON.parse(fs.readFileSync(__dirname + "/data/classificacao-specs.json")),
+	//classificacoes: JSON.parse(fs.readFileSync(__dirname + "/data/classificacao-specs.json")),
 	itens: JSON.parse(fs.readFileSync(__dirname + "/data/item-specs.json"))
 };
 
