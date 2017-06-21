@@ -15,7 +15,7 @@ var db = {
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-app.use(express.static(path.join(__dirname, 'css')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // suponhamos que "/public" é uma pasta com
 // nossos arquivos estáticos
