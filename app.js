@@ -12,14 +12,15 @@ app.set('view engine', 'hbs');
 // nossos arquivos estáticos
 //app.use(express.static(__dirname + '/views'));
 
-
 var db = {
-	classificacoes: JSON.parse(fs.readFileSync(__dirname + "../data/classificacao-specs.json")),
-	itens: JSON.parse(fs.readFileSync(__dirname + "../data/item-specs.json"))
+	classificacoes: JSON.parse(fs.readFileSync(__dirname + "/data/classificacao-specs.json")),
+	itens: JSON.parse(fs.readFileSync(__dirname + "/data/item-specs.json"))
 };
 
 let server = app.listen(process.env.PORT || 3000, function () {
-  console.log('process.env.PORT');
+	console.log(__dirname + "/data/classificacao-specs.json");
+	console.log(__dirname + "/data/item-specs.json");
+  	console.log('process.env.PORT');
 });
 
 app.get('/', function(request, response) {
