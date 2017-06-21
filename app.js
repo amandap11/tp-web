@@ -5,6 +5,14 @@ var path = require('path');
 //var hbs = require('handlebars');
 //var hbs = require('express-hbs');
 
+var fs = require('fs');
+var _ = require('underscore');
+
+var db = {
+	classificacoes: JSON.parse(fs.readFileSync(__dirname + "/data/classificacoes.json")),
+	itens: JSON.parse(fs.readFileSync(__dirname + "/data/itens.json"))
+};
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
@@ -18,7 +26,7 @@ let server = app.listen(process.env.PORT || 3000, function () {
 });
 
 app.get('/', function(request, response) {
-  response.render('index');
+  response.render('index', db.classificacoes);
 });
 
 module.exports = app;
