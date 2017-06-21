@@ -2,8 +2,6 @@ let express = require('express'),
     app = express();
 
 var path = require('path');
-//var hbs = require('handlebars');
-//var hbs = require('express-hbs');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -13,12 +11,17 @@ app.set('view engine', 'hbs');
 // nossos arquivos estáticos
 //app.use(express.static(__dirname + '/views'));
 
+var db = {
+	classificacoes: JSON.parse(fs.readFileSync(__dirname + "/data/classificacao-specs.json")),
+	itens: JSON.parse(fs.readFileSync(__dirname + "/data/item-specs.json"))
+};
+
 let server = app.listen(process.env.PORT || 3000, function () {
   console.log('Escutando em: http://localhost:3000');
 });
 
 app.get('/', function(request, response) {
-  response.render('index');
+  response.render('index', db.classificacoes);
 });
 
 module.exports = app;

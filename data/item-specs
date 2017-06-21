@@ -1,0 +1,32 @@
+[
+	{
+		"item": "Bermuda",
+		"valor": 20,
+		"novo": 0
+	},
+	{
+		"item": "Blusa de Frio",
+		"valor": 30,
+		"novo": 0
+	},
+	{
+		"item": "Camisa",
+		"valor": 20,
+		"novo": 0
+	},
+	{
+		"item": "Camiseta",
+		"valor": 15,
+		"novo": 0
+	},
+	{
+		"item": "Par de Meias",
+		"valor": 5,
+		"novo": 1
+	},
+	{
+		"item": "Calça",
+		"valor": 40,
+		"novo": 0
+	}
+]
