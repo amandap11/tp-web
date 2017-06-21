@@ -14,8 +14,8 @@ app.set('view engine', 'hbs');
 
 
 var db = {
-	classificacoes: JSON.parse(fs.readFileSync(__dirname + "/data/classificacao-specs.json")),
-	itens: JSON.parse(fs.readFileSync(__dirname + "/data/item-specs.json"))
+	classificacoes: JSON.parse(fs.readFileSync(__dirname + "../data/classificacao-specs.json")),
+	itens: JSON.parse(fs.readFileSync(__dirname + "../data/item-specs.json"))
 };
 
 let server = app.listen(process.env.PORT || 3000, function () {
