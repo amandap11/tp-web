@@ -1,0 +1,83 @@
+{
+	"classificacoes": [
+		{
+			"estado": "Novo",
+			"valor": 100
+		},
+		{
+			"estado": "Ótimo",
+			"valor": 80
+		},
+		{
+			"estado": "Bom",
+			"valor": 60
+		},
+		{
+			"estado": "Ruim",
+			"valor": 30
+		},
+		{
+			"estado": "Inutilizável",
+			"valor": 10
+		}
+	],
+	
+	"itens": [
+		{
+			"nome": "Bermuda",
+			"valor": 20
+		},
+		{
+			"nome": "Blusa de Frio",
+			"valor": 30
+		},
+		{
+			"nome": "Camisa",
+			"valor": 20
+		},
+		{
+			"nome": "Camiseta",
+			"valor": 15
+		},
+		{
+			"nome": "Calça",
+			"valor": 40
+		},
+		{
+			"nome": "Short",
+			"valor": 15
+		},
+		{
+			"nome": "Jaqueta",
+			"valor": 50
+		},
+		{
+			"nome": "Touca",
+			"valor": 5
+		},
+		{
+			"nome": "Boné",
+			"valor": 5
+		},
+		{
+			"nome": "Par de Luvas",
+			"valor": 5
+		},
+		{
+			"nome": "Par de Tênis",
+			"valor": 50
+		},
+		{
+			"nome": "Par de Sapatos",
+			"valor": 30
+		},
+		{
+			"nome": "Par de Sapatilhas",
+			"valor": 15
+		},
+		{
+			"nome": "Par de Chinelos",
+			"valor": 10
+		}
+	]
+}
