@@ -25,8 +25,7 @@
 	"itens": [
 		{
 			"nome": "Bermuda",
-			"valor": 20,
-			"novo": 0
+			"valor": 20
 		},
 		{
 			"nome": "Blusa de Frio",
@@ -65,11 +64,6 @@
 			"valor": 5
 		},
 		{
-			"nome": "Par de Meias",
-			"valor": 7,
-			"novo": 1
-		},
-		{
 			"nome": "Par de Tênis",
 			"valor": 50
 		},
@@ -84,11 +78,6 @@
 		{
 			"nome": "Par de Chinelos",
 			"valor": 10
-		},
-		{
-			"nome": "Cueca/Calcinha",
-			"valor": 30,
-			"novo": 1
 		}
 	]
 }
