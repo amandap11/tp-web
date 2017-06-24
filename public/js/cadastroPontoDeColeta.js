@@ -2,6 +2,6 @@ let botaoCadastrar = document.getElementById("registrar");
 
 botaoCadastrar.addEventListener('click', function(){
 
-	window.location.href = "minhaContaPontoColeta.html";
+	window.location.href = "/minhaContaPontoColeta";
 	
 });
