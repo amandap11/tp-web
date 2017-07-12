@@ -2,11 +2,24 @@ let express = require('express'),
     app = express();
 
 var path = require('path');
-//var hbs = require('handlebars');
-//var hbs = require('express-hbs');
-
 var fs = require('fs');
-var _ = require('underscore');
+
+//MongoDB
+var mongoose = require('mongoose');
+var secrets = require('./data/secrets');
+var dbcon = secrets.db;
+var MongoClient = require('mongodb').MongoClient;
+
+//Doador
+var doadorRoute = require('./routes/doador');
+
+// Connect to the db
+MongoClient.connect(dbcon, function(err, db) {
+  if(err) { 
+  	return console.error('MongoDB Connection Error. Please make sure that MongoDB is running.'); 
+  }
+});
+
 
 var db = {
 	dados: JSON.parse(fs.readFileSync(__dirname + "/data/dados.json"))
@@ -39,10 +52,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // suponhamos que "/public" é uma pasta com
 // nossos arquivos estáticos
-//app.use(express.static(__dirname + '/views'));
+//app.use(express.static(path.join(__dirname + 'views')));
 
-let server = app.listen(process.env.PORT || 3000, function () {
-  console.log('Escutando em: http://localhost:3000');
+var porta = process.env.PORT || 3000;
+
+let server = app.listen(porta, function () {
+  console.log('Escutando em: http://localhost:' + porta);
 });
 
 app.get('/', function(request, response) {
@@ -56,6 +71,9 @@ app.get('/login', function(request, response) {
 app.get('/cadastroDoador', function(request, response) {
   response.render('cadastroDoador');
 });
+
+//CORRIGIR ISSO AQUI!!
+app.post('/editarConta', doadorRoute);
 
 app.get('/loginPontoDeColeta', function(request, response) {
   response.render('loginPontoDeColeta');

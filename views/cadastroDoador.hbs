@@ -46,7 +46,7 @@
         <span>
           <div class="conteudoCentralizado" id="signupDoador">
             <h2>Cadastro de Doador!</h2>
-            <form action="/editarConta">
+            <form action="/editarConta" method='post'>
             <!--<form action="minhaConta.html">-->
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <span>Eu sou um(a):</span>
@@ -60,47 +60,47 @@
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Nome Completo</legend>
-                <input class="mdl-textfield__input" type="text" id="nomeDoador" required>   
+                <input class="mdl-textfield__input" type="text" id="nomeDoador" name="nomeDoador" required>   
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Data de Nascimento</legend>
-                <input class="mdl-textfield__input" type="date" id="dataNascimentoDoador" required> 
+                <input class="mdl-textfield__input" type="date" id="dataNascimentoDoador" name="dataNascimentoDoador" required> 
               </div>
               
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Endereço</legend>
-                <input class="mdl-textfield__input" type="text" id="enderecoDoador" required>
+                <input class="mdl-textfield__input" type="text" id="enderecoDoador" name="enderecoDoador" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Telefone</legend>
-                <input class="mdl-textfield__input" type="text" id="telefoneDoador" pattern="[0-9]+$" required>
+                <input class="mdl-textfield__input" type="text" id="telefoneDoador" name="telefoneDoador" pattern="[0-9]+$" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>CPF</legend>
-                <input class="mdl-textfield__input" type="text" id="cpfDoador" pattern="[0-9]+$" maxlength="8" required>
+                <input class="mdl-textfield__input" type="text" id="cpfDoador" name="cpfDoador" pattern="[0-9]+$" maxlength="11" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>E-mail</legend>
-                <input class="mdl-textfield__input" type="e-mail" id="emailDoador" required>
+                <input class="mdl-textfield__input" type="e-mail" id="emailDoador" name="emailDoador" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Nome de Usuário</legend>
-                <input class="mdl-textfield__input" type="text" id="loginDoador" required>
+                <input class="mdl-textfield__input" type="text" id="loginDoador" name="loginDoador" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Senha</legend>
-                <input class="mdl-textfield__input" type="password" id="passwordDoador" required>
+                <input class="mdl-textfield__input" type="password" id="passwordDoador" name="passwordDoador" required>
               </div>
 
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <legend>Confirmar senha</legend>
-                <input class="mdl-textfield__input" type="password" id="confirmaPasswordDoador" required>
+                <input class="mdl-textfield__input" type="password" id="confirmaPasswordDoador" name="confirmaPasswordDoador" required>
               </div>
 
               <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
